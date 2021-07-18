@@ -12,7 +12,14 @@ def getDataForJson(stock):
     for day in seriesStock:
         values = seriesStock[day]
         valuesCollect.append(values["1. open"])
-    return valuesCollect
+    return constructFormatLineChart(valuesCollect)
+
+
+def constructFormatLineChart(rawData):
+    return [float(elem) for elem in rawData]
+  
+
+
 
 
 

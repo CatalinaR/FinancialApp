@@ -15,7 +15,7 @@ def home():
 @app.route('/data', methods=['GET'])
 def apple_data():
     search = request.args.get("stock")
-    print("VAlues received: " + search)
+    print("Values received: " + search)
     if search is not None:
         stock = search
     else:
